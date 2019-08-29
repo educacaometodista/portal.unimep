@@ -1,7 +1,7 @@
 /*
 * PORTAL UNIVERSIDADE METODISTA DE SÃO PAULO
 *
-* GitHub: https://github.com/educacaometodista/Portal-UMESP-Plone-5
+* GitHub: https://github.com/educacaometodista/Portal-UNIMEP-Plone-5
 *
 * Autor: Fernando Henrique Zancopé
 * Assistente: Léu Almeida
@@ -171,13 +171,13 @@ body:not(.userrole-authenticated).section-enade aside#portal-column-one #portlet
 }
 
 i.material-icons.icone-atendimento{
- color:#ffc62c;   
+ color:#DE9518;   
  font-size:5em;
  text-shadow: 2px 1px 2px rgba(0,0,0,0.38);
 }
 
 i.material-icons.icone-atendimento:hover {
-    color: #ffde85;
+    color: rgb(235, 171, 61);
 }
 
 .plone-btn-atendimento {
@@ -222,13 +222,13 @@ body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before{
 }
 
 .col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online{
-    background: rgba(2,104,199,1);
-    background: -moz-linear-gradient(top, rgba(2,104,199,1) 0%, rgba(4,64,121,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(2,104,199,1)), color-stop(100%, rgba(4,64,121,1)));
-    background: -webkit-linear-gradient(top, rgba(2,104,199,1) 0%, rgba(4,64,121,1) 100%);
-    background: -o-linear-gradient(top, rgba(2,104,199,1) 0%, rgba(4,64,121,1) 100%);
-    background: -ms-linear-gradient(top, rgba(2,104,199,1) 0%, rgba(4,64,121,1) 100%);
-    background: linear-gradient(to bottom, rgba(2,104,199,1) 0%, rgba(4,64,121,1) 100%);
+    background: rgb(109, 109, 109);
+    background: -moz-linear-gradient(top, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(109, 109, 109)), color-stop(100%, rgb(0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%);
+    background: -o-linear-gradient(top, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%);
+    background: -ms-linear-gradient(top, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%)
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268c7', endColorstr='#044079', GradientType=0 );
     color:#ffc62c;
     height: 200px;
@@ -1376,10 +1376,19 @@ body.section-pos-graduacao-e-pesquisa .link-contratos:before {
     box-shadow: 0px -1px 3px #d4d4d4;
 }
 
+/* CLASSES PADRÕES DO PLONE */
+
+.plone-breadcrumb ol a {
+    color: #252525;
+}
+
+span.summary a {
+    color: #F29C33;
+}
 
 /* NAVEGAÇÃO */
 .plone-navbar{
-    background-color: #3776B0;
+    background-color: #252525;
     min-height: 30px;
 }
 
@@ -1398,9 +1407,12 @@ margin-bottom:15px;
 }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    background-color: #3776b0 !important;
+    background-color: #545454 !important;
 }
 
+.plone-nav > li > a:hover, .plone-nav > li > a:focus{
+    background-color: #545454 !important;
+}
 /* BUSCA PERSONAL */
 .rslides_container {
     position: sticky;
@@ -1473,7 +1485,7 @@ a.transparent-btns_nav.transparent-btns1_nav.prev:hover {
 
 h1,h2,h3,h4,h5,h6,h7{
     font-family: 'Oswald', sans-serif;
-    color:#3776B0;
+    color:#F29C33;
 }
 h2 {
     font-size: 36px;
@@ -2386,8 +2398,8 @@ ul.event.summary.details li.event-date span.timezone{
 /* FOOTER */
 
 footer#portal-footer{
-    background: #01396D;
-    color: #fff;
+    background: #171717;
+    color: #e0e0e0;
     padding: 15px 0;
 }
 footer h5 {
@@ -2519,7 +2531,7 @@ body.fixedmenu #mainnavigation-wrapper{
 .barra-institucional{
     display:inline-block;
     width:100%;
-    background:#3776B0;
+    background:#252525;
 }
 .barra-institucional ul li{
     padding:0;
@@ -2530,7 +2542,7 @@ body.fixedmenu #mainnavigation-wrapper{
 }
 
 .barra-institucional ul li a{
-    color:#fff;
+    color:#ffffff;
     display: inline-block;
     font-size: 11px;
     padding: 15px 8px;
@@ -2548,7 +2560,7 @@ body.fixedmenu #mainnavigation-wrapper{
 }
 
 .barra-institucional ul.barra-left li.atend-online{
-    background: rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.12);
     color: #fff;
     padding-left: 14px;
 }
@@ -2569,7 +2581,7 @@ body.fixedmenu #mainnavigation-wrapper{
 .barra-institucional ul.barra-right li.topo-siga, 
 .barra-institucional ul.barra-right li.topo-moodle,
 .barra-institucional ul.barra-right li.topo-portal-do-aluno{
-    background: rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.12);
 }
 .barra-institucional ul.barra-right li.topo-siga a, 
 .barra-institucional ul.barra-right li.topo-moodle a,
@@ -2800,7 +2812,7 @@ body.section-enade .container-fluid.nopadding .contagem {
     display: block;
     padding: 5px 10px !important;
     margin-left: 0 !important;
-    border-bottom: 3px solid #f5cb00;
+    border-bottom: 3px solid #DE9518;
     border-radius: 0 0 4px 4px;
     }
     .dropdown-menu{
