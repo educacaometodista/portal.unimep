@@ -173,14 +173,32 @@ body:not(.userrole-authenticated).section-enade aside#portal-column-one #portlet
     display:none;
 }
 
-i.material-icons.icone-atendimento{
+/*MODAL ATENDIMENTO*/
+
+i.fas.icone-atendimento{
  color:#DE9518;   
  font-size:5em;
  text-shadow: 2px 1px 2px rgba(0,0,0,0.38);
+	margin-bottom: 15px
+}
+.col-xs-12.col-sm-4.atendimento-online a{
+	display: block;
+    background: rgba(222, 149, 24, 0.5);
+    border-radius: 4px;
+    padding: 30px 0;
+    margin-top: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.col-xs-12.col-sm-4.atendimento-online a:hover{
+	text-decoration: none;
+	transition: 0.3s;
+	background: rgba(222, 149, 24, 0.35);
 }
 
-i.material-icons.icone-atendimento:hover {
-    color: rgb(235, 171, 61);
+h6.atendimento-modal {
+    color: #FFF;
+    font-size: 30px;
 }
 
 .plone-btn-atendimento {
@@ -224,7 +242,7 @@ body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before{
     top: -15px;
 }
 
-.col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online{
+/*.col-xs-12.col-sm-6.col-md-6.col-lg-3.atendimento-online{
     background: rgb(109, 109, 109);
     background: -moz-linear-gradient(top, rgb(109, 109, 109) 0%, rgb(0, 0, 0) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(109, 109, 109)), color-stop(100%, rgb(0, 0, 0)));
@@ -242,7 +260,7 @@ body:not(.userrole-authenticated) .mosaic-grid-row.avisos:before{
     margin-left: 5px;
     padding-top: 35px;
     text-align: center;
-}
+}*/
 
 a.plone-modal-close{
     color:#fff !important;
