@@ -1800,7 +1800,7 @@ a.saiba-mais::after{
 a.saiba-mais:hover{
     text-decoration: none;
     border: none;
-    background: #255684;
+    background: #cc842d;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 p.sabialink{text-align: right;}
