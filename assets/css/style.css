@@ -7,11 +7,14 @@
 * Assistente: Léu Almeida
 *
 *
-* CORES DO TEMA
+* CORES DO TEMA UNIMEP
+
+* Laranja (Títulos e Links): #F29C33
+
 * Azul Fundo: #425e85
 * Azul Logo: #014A94
 * Amarelo Logo: #FFD50F
-*
+
 */ 
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600');
@@ -400,20 +403,20 @@ section.portletContent img{
     max-width:100%;
 }
 section.portlet-static-coordenador h6 {
-    color: #3776B0 !important;
+    color: #F29C33 !important;
     font-size: 18px;
     padding: 0 15px 10px !important;
     text-align: center;
 }
 section.portlet-static-coordenadora h6 {
-    color: #3776B0 !important;
+    color: #F29C33 !important;
     font-size: 18px;
     padding: 0 15px 10px !important;
     text-align: center;
 }
 section.portlet.portletStaticText.portlet-static-coordenadora .portletHeader,
 section.portlet.portletStaticText.portlet-static-coordenador .portletHeader{
-    background: #3776b0 !important;
+    background: #F29C33 !important;
     color: #FFF;
     text-align: center;
 }
@@ -1342,7 +1345,7 @@ body.section-financeiro fieldset.autotoc-section .link-contratos a:before{
 }
 
 a.botao-polo-financeiro {
-    background: #3776b0;
+    background: #F29C33;
     color: #FFF;
     display: block;
     margin: 0 0.5%;
@@ -1364,7 +1367,7 @@ body.section-financeiro .link-contratos:before,
 body.section-pos-graduacao-e-pesquisa .link-contratos:before {
     content: " ";
     display: block;
-    border-bottom: solid 2px #3776B0;
+    border-bottom: solid 2px #F29C33;
     width: 100%;
     margin-top: 15px;
     margin-bottom: -16px;
@@ -1393,7 +1396,7 @@ span.summary a {
 }
 
 ul.dropdown-menu div.divisor {
-    background-color: #3776b0;
+    background-color: #F29C33;
     height: 2px;
 }
 ul.dropdown-menu li a i.far{
@@ -1560,7 +1563,7 @@ body:not(.userrole-authenticated).section-lato-sensu #content .mosaic-tile-conte
 
 .mosaic-grid-row.mosaic-grid-row-fluid.titulo-tachado{
     margin-top: 30px;
-    border-bottom: solid 4px #3776B0;
+    border-bottom: solid 4px #F29C33;
 }
 .mosaic-grid-row.mosaic-grid-row-fluid.titulo-tachado .movable.removable.mosaic-tile .mosaic-tile-content{
     
@@ -1699,7 +1702,7 @@ body.section-graduacao-presencial .mosaic-tile-content .tileItem.visualIEFloatFi
 /* LINKS */
 
 a{
-    color:#3776B0;
+    color:#F29C33;
 }
 a.polos-apoio{
     display: block;
@@ -1749,7 +1752,7 @@ a.bt-formaturas ins {
 }
 
 a.saiba-mais {
-    background: #3776B0;
+    background: #F29C33;
     color: #fff;
     border-radius: 4px;
     padding: 5px 15px;
@@ -1937,7 +1940,7 @@ body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao .mosaic-g
     padding:15px;
     background:#FFF;
     border-radius:4px;
-    border-left: solid 6px #3776B0;
+    border-left: solid 6px #F29C33;
     margin-bottom: 20px;
 }
 body.section-lato-sensu.subsection-unidades-especiais-de-pos-graduacao .mosaic-grid-row.fundo-polos-lato .mosaic-grid-cell .movable.removable.mosaic-tile p:last-of-type{
@@ -2244,7 +2247,7 @@ a.boxes-lato .material-icons{
     padding:15px;
     margin-bottom:20px;
     border-radius:4px;
-    border:solid 5px #3776B0;
+    border:solid 5px #F29C33;
     text-align:center;
 }
 
@@ -2252,13 +2255,13 @@ a.boxes-lato .material-icons{
 .menu-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content p.fas
 {
     font-size:62px;
-    color:#3776B0;
+    color:#F29C33;
 }
 .menu-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h4{
     margin-bottom:0;
 }
 .menu-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h4 a{
-    background: #3776B0;
+    background: #F29C33;
     color: #FFF;
     width: 100%;
     display: block;
@@ -2301,7 +2304,7 @@ background:#c19d13;
 /* DESTAQUES */
 h2.destaques-home,
 .box-home.destaques h3{
-    color:#3776B0;
+    color:#F29C33;
 }
 
 h2.destaques-home::before{
@@ -2330,7 +2333,7 @@ h2.destaques-home::before{
 /* NOTÍCIAS */ 
 
 h2.noticias-home{
-    color: #3776B0;
+    color: #F29C33;
 }
 h2.noticias-home::before{
     font-family: "Font Awesome 5 Free";
@@ -2359,7 +2362,7 @@ body.section-noticias article#content #content-core{
 
 /* EVENTOS */
 .eventos-home h2{
-    color:#3776B0;
+    color:#F29C33;
 }
 
 .eventos-home h2::before{
@@ -2382,7 +2385,7 @@ body.section-noticias article#content #content-core{
 }
 
 .eventos-home .vevent.tileItem .cal_info.clearfix a.url{
-    color:#3776B0;
+    color:#F29C33;
     line-height: 1.35em;
 }
 section.existing-content-tile.eventos-home .documentDescription.description{
@@ -2478,7 +2481,7 @@ footer.row a.link-category{
     line-height: 2;
 }
 .link-category[href]:hover, .link-category[href]:focus {
-    background-color: #3776b0;
+    background-color: #F29C33;
 }
 a.link-category:hover, a.link-category:focus {
     color: #ffffff;
