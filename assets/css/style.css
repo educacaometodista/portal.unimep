@@ -1,5 +1,5 @@
 /*
-* PORTAL UNIVERSIDADE METODISTA DE SÃO PAULO
+* PORTAL UNIVERSIDADE METODISTA DE PIRACICABA
 *
 * GitHub: https://github.com/educacaometodista/Portal-UNIMEP-Plone-5
 *
@@ -56,6 +56,7 @@ button.envia-form:hover{
   width: 600px;
   height: 400px;
   background-color: #f0f1f2;
+  z-index: 1;
   position: absolute;
   z-index:9999;
   display:block;
@@ -321,10 +322,34 @@ body:not(.userrole-authenticated).section-rh-rapido.template-layout.no-portlet-c
 body:not(.userrole-authenticated).section-graduacao-presencial #content,
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
 body:not(.userrole-authenticated).section-lato-sensu #content,
+body:not(.userrole-authenticated).section-centro-de-linguas #content,
+body:not(.userrole-authenticated).section-central-de-estagios #content,
+body:not(.userrole-authenticated).section-formaturas #content,
 body:not(.userrole-authenticated).section-pastoral-universitaria #content,
 body:not(.userrole-authenticated).section-eventos #content,
-body:not(.userrole-authenticated).section-institucional #content
-{
+body:not(.userrole-authenticated).section-institucional #content,
+body:not(.userrole-authenticated).section-extensao #content,
+body:not(.userrole-authenticated).section-assessoria-pedagogica-para-inclusao #content,
+body:not(.userrole-authenticated).section-policlinica #content,
+body:not(.userrole-authenticated).section-biblioteca #content,
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-gestao-de-cidades #content,
+body:not(.userrole-authenticated).section-unesco #content,
+body:not(.userrole-authenticated).section-academia-escola #content,
+body:not(.userrole-authenticated).section-enade #content,
+body:not(.userrole-authenticated).section-agencia-metodista-de-consultoria #content,
+body:not(.userrole-authenticated).section-conselho-universitario #content,
+body:not(.userrole-authenticated).section-rh-rapido #content,
+body:not(.userrole-authenticated).section-area-do-aluno #content,
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-sobre #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-destaques #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-publicacoes #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-materiais-de-apoio #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia.subsection-projetos #content,
+body:not(.userrole-authenticated).section-faculdade-de-teologia .mosaic-grid-row.apresentacao-teologia .mosaic-grid-cell.mosaic-width-full .mosaic-tile-content,
+body:not(.userrole-authenticated).section-centro-otilia-chaves #content,
+body:not(.userrole-authenticated).section-centro-de-estudos-wesleyanos #content{
     background:#fff;
     padding:15px;
     border-radius:4px;
@@ -393,6 +418,7 @@ section.portlet.portletStaticText.portlet-static-coordenador .portletHeader{
     text-align: center;
 }
 
+
 .mosaic-grid-row.personal-toogle .mosaic-grid-cell .mosaic-tile .mosaic-tile-content a.botao-toogle{
     background: #153f67;
     border: none;
@@ -417,16 +443,37 @@ body.section-financeiro .plone-breadcrumb,
 body.section-stricto-sensu .plone-breadcrumb,
 body.section-lato-sensu .plone-breadcrumb,
 body.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
+body.section-centro-de-linguas .plone-breadcrumb,
+body.section-formaturas .plone-breadcrumb,
 body.section-pastoral-universitaria .plone-breadcrumb,
 body.section-eventos .plone-breadcrumb,
-body.section-biblioteca .plone-breadcrumb
+body.section-rh-rapido .plone-breadcrumb,
+body.section-area-do-aluno .plone-breadcrumb,
+body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.section-assessoria-pedagogica-para-inclusao .plone-breadcrumb,
+body.section-policlinica .plone-breadcrumb,
+body.section-biblioteca .plone-breadcrumb,
+body.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.section-academia-escola .plone-breadcrumb,
+body.section-enade .plone-breadcrumb,
+body.section-agencia-metodista-de-consultoria .plone-breadcrumb,
+body.section-centro-otilia-chaves .plone-breadcrumb,
+body.section-centro-de-estudos-wesleyanos .plone-breadcrumb
 {
     margin-bottom:0;
 }
 body:not(.userrole-authenticated).section-graduacao-a-distancia #content,
 body:not(.userrole-authenticated).section-financeiro #content,
 body:not(.userrole-authenticated).section-institucional #content,
-body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row
+body:not(.userrole-authenticated).section-area-do-aluno #content,
+body:not(.userrole-authenticated).section-nucleo-de-arte-e-cultura #content,
+body:not(.userrole-authenticated).section-assessoria-de-relacoes-internacionais #content,
+body:not(.userrole-authenticated).section-nucleo-de-formacao-cidada #content,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.fundo-branco .mosaic-grid-cell .mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa #content .mosaic-grid-row.colecao-noticias-graduacao .mosaic-grid-cell .mosaic-tile .mosaic-tile-content dl,
+body:not(.userrole-authenticated).section-noticias #content .mosaic-grid-row,
+body:not(.userrole-authenticated).section-pos-graduacao-e-pesquisa.subsection-programas.layout-default-document #content,
+body:not(.userrole-authenticated).section-stricto-sensu.site-Metodista.section-stricto-sensu #content
 {
     background:#fff;
     padding:15px;
@@ -436,31 +483,84 @@ body.userrole-authenticated .label{
 color:#4d4d4d;
 }
 
+body:not(.userrole-authenticated).no-portlet-columns.section-pos-graduacao-e-pesquisa #content .mosaic-grid-row .mosaic-grid-cell{
+    padding:0;
+}
+
 body.userrole-authenticated.section-graduacao-presencial .plone-breadcrumb,
 body.userrole-authenticated.section-graduacao-a-distancia .plone-breadcrumb,
 body.userrole-authenticated.section-institucional .plone-breadcrumb,
 body.userrole-authenticated.section-financeiro .plone-breadcrumb,
 body.userrole-authenticated.section-stricto-sensu .plone-breadcrumb,
 body.userrole-authenticated.section-lato-sensu .plone-breadcrumb,
+body.userrole-authenticated.section-pos-graduacao-e-pesquisa .plone-breadcrumb,
+body.userrole-authenticated.section-centro-de-linguas .plone-breadcrumb,
 body.userrole-authenticated.section-formaturas .plone-breadcrumb,
+body.userrole-authenticated.section-pastoral-universitaria .plone-breadcrumb,
 body.userrole-authenticated.section-eventos .plone-breadcrumb,
-body.userrole-authenticated.section-biblioteca .plone-breadcrumb
+body.userrole-authenticated.section-rh-rapido .plone-breadcrumb,
+body.userrole-authenticated.section-area-do-aluno .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.userrole-authenticated.section-assessoria-pedagogica-para-inclusao .plone-breadcrumb,
+body.userrole-authenticated.section-policlinica .plone-breadcrumb,
+body.userrole-authenticated.section-biblioteca .plone-breadcrumb,
+body.userrole-authenticated.section-nucleo-de-arte-e-cultura .plone-breadcrumb,
+body.userrole-authenticated.section-academia-escola .plone-breadcrumb,
+body.userrole-authenticated.section-enade .plone-breadcrumb,
+body.userrole-authenticated.section-agencia-metodista-de-consultoria .plone-breadcrumb,
+body.userrole-authenticated.section-centro-otilia-chaves .plone-breadcrumb,
+body.userrole-authenticated.section-centro-de-estudos-wesleyanos .plone-breadcrumb
 {
     margin-bottom:20px;
 }
-
-body:not(.userrole-authenticated) .container-fluid.nopadding
-/*body.section-graduacao-a-distancia .container-fluid.nopadding*/
+body.section-graduacao-presencial .container-fluid.nopadding,
+body.section-graduacao-a-distancia .container-fluid.nopadding,
+body.section-institucional .container-fluid.nopadding,
+body.section-financeiro .container-fluid.nopadding,
+body.section-stricto-sensu .container-fluid.nopadding,
+body.section-lato-sensu .container-fluid.nopadding,
+body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding,
+body.section-centro-de-linguas .container-fluid.nopadding,
+body.section-formaturas .container-fluid.nopadding,
+body.section-pastoral-universitaria .container-fluid.nopadding,
+body.section-eventos .container-fluid.nopadding,
+body.section-rh-rapido .container-fluid.nopadding,
+body.section-area-do-aluno .container-fluid.nopadding,
+body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
+body.section-assessoria-pedagogica-para-inclusao .container-fluid.nopadding,
+body.section-policlinica .container-fluid.nopadding,
+body.section-biblioteca .container-fluid.nopadding,
+body.section-nucleo-de-arte-e-cultura .container-fluid.nopadding,
+body.section-academia-escola .container-fluid.nopadding,
+body.section-enade .container-fluid.nopadding,
+body.section-agencia-metodista-de-consultoria .container-fluid.nopadding,
+body.section-faculdade-de-teologia .container-fluid.nopadding,
+body.section-centro-otilia-chaves .container-fluid.nopadding,
+body.section-centro-de-estudos-wesleyanos .container-fluid.nopadding
 {
     height: 300px;
     background-color: #f5faff;
     margin-bottom:20px;
 }
 
+body.section-enade .container-fluid.nopadding .contagem {
+    padding-top: 70px;
+    font-family: 'Zeyada', cursive;
+    font-size: 74px;
+    color: #153888;
+    text-align: center;
+
+}
+body.section-enade .container-fluid.nopadding .contagem span#dia {
+    color: rgba(177, 48, 48, 0.9);
+}
 
 body.section-graduacao-presencial h4,
 body.section-financeiro h4{
     margin-top:20px;
+}
+body.section-graduacao-presencial .mosaic-tile-content iframe{
+    padding-bottom:10px;
 }
 
 /*Graduação Presencial/Notícias */
@@ -478,13 +578,43 @@ body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt
     display: none;
 }
 
-body:not(.userrole-authenticated) .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
-body:not(.userrole-authenticated) .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
-body:not(.userrole-authenticated) .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dd,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .summary img,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dd,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .summary img,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content dl dt .documentByLine
 {
     display:none;
 }
-body:not(.userrole-authenticated) .mosaic-grid-row.colecao-noticias .mosaic-tile-content  dt .summary:before{
+body.section-graduacao-presencial .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content  dt .summary:before,
+body.section-graduacao-a-distancia .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content  dt .summary:before,
+body.section-pos-graduacao-e-pesquisa .mosaic-grid-row.colecao-noticias-graduacao .mosaic-tile-content  dt .summary:before,
+body.section-noticias .mosaic-grid-row.colecao-noticias .mosaic-tile-content  dt .summary:before,
+body.section-gestao-de-cidades .mosaic-grid-row.colecao-noticias .mosaic-tile-content  dt .summary:before,
+body.section-unesco .mosaic-grid-row.colecao-noticias .mosaic-tile-content  dt .summary:before{
     font-family: "Font Awesome 5 Free";
    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -502,6 +632,10 @@ body:not(.userrole-authenticated) .mosaic-grid-row.colecao-noticias .mosaic-tile
 
 /* REFLEXÕES DA PASTORAL */
 
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dt span.documentByLine,
+body:not(.userrole-authenticated).section-pastoral-universitaria.subsection-reflexoes .mosaic-grid-row.notocias-pastoral .mosaic-tile-content dl dd{
+    display:none;
+}
 
 body:not(.userrole-authenticated).section-pastoral-universitaria .portlet.portletStaticText.portlet-static-pastoral-universitria header.portletHeader:before{
     content:" ";
@@ -818,6 +952,17 @@ body:not(.userrole-authenticated) .mosaic-grid-row.projetos-fateo-home .movable.
     -moz-box-shadow: 0px 6px 6px -2px rgba(0,0,0,0.33);
     box-shadow: 0px 6px 6px -2px rgba(0,0,0,0.33);
 }
+.mosaic-grid-row.blocos-teologia .publica-teologia a.link-publica-teologia2,
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2{
+    margin-left:2%;
+}
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia,
+.mosaic-grid-row.projetos-fateo-home .publica-teologia a.link-publica-teologia2{
+    margin-bottom:25px;
+}
+.mosaic-grid-row.blocos-teologia .mosaic-tile-content .tileItem.visualIEFloatFix a.summary-image{
+display:none;
+}
 
 /*STRICTO CIÊNCIAS DA RELIGIÃO*/
 
@@ -1116,6 +1261,16 @@ body.frontend.icons-off.no-portlet-columns.pat-markspeciallinks.portaltype-folde
 }
 
 /* BANNERS TOPOS DE SESSÃO */
+/*body.section-graduacao-presencial .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-graduacao-a-distancia .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-financeiro .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-stricto-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-lato-sensu .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-centro-de-linguas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-formaturas .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-pastoral-universitaria .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading,
+body.section-assessoria-pedagogica-para-inclusao */
 .container-fluid.nopadding .banner-fluido-novo .tit-grad h1.documentFirstHeading{
     text-align: center;
     padding: 100px 0 0;
@@ -1127,7 +1282,17 @@ body.frontend.icons-off.no-portlet-columns.pat-markspeciallinks.portaltype-folde
     text-shadow: 3px 3px 5px #000;
 
 }
-
+/*body.section-graduacao-presencial .container-fluid.nopadding .subtit-grad,
+body.section-graduacao-a-distancia .container-fluid.nopadding .subtit-grad,
+body.section-financeiro .container-fluid.nopadding .subtit-grad,
+body.section-stricto-sensu .container-fluid.nopadding .subtit-grad,
+body.section-lato-sensu .container-fluid.nopadding .subtit-grad,
+body.section-pos-graduacao-e-pesquisa .container-fluid.nopadding .subtit-grad,
+body.section-centro-de-linguas .container-fluid.nopadding .subtit-grad,
+body.section-formaturas .container-fluid.nopadding .subtit-grad,
+body.section-pastoral-universitaria .container-fluid.nopadding .subtit-grad,
+body.section-rh-rapido .container-fluid.nopadding .subtit-grad,
+body.section-assessoria-pedagogica-para-inclusao */
 .container-fluid.nopadding .subtit-grad
 {
     font-family: 'Parisienne', cursive;
@@ -1212,6 +1377,7 @@ body.section-pos-graduacao-e-pesquisa .link-contratos:before {
 }
 
 /* CLASSES PADRÕES DO PLONE */
+
 .plone-breadcrumb ol a {
     color: #252525;
 }
@@ -1841,6 +2007,25 @@ body.section-unesco div.mosaic-grid-row.noticias-unesco .mosaic-tile-content div
 i.material-icons.home.bolsas,
 h2.bolsas{
     color:#d25c5c;
+}
+.titulo-bolsas-intercambio h2:before{
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: 40px;
+    margin: 0 10px 0 0;
+    line-height: 45px;
+    content: "\f19d";
+    float: left;
+    font-size: 40px;
+    margin: 0 10px 0 0;
+    line-height: 45px;
+    color: #d25c5c;
 }
 
 
@@ -3003,6 +3188,13 @@ body.section-enade .container-fluid.nopadding .contagem {
 body.section-home .tileItem.visualIEFloatFix a.summary-image {
     height: 180px;
 }
+/*body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row
+{
+    max-width: 1140px;
+    background:#fff;
+    padding:5px 15px;
+    border-radius:4px;
+}*/
 
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-graduacao-presencial .outer-wrapper > .container .mosaic-grid-row,
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row,
@@ -3012,7 +3204,22 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-str
     padding:0;
 }
 
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-agencia-de-divulgacao-cientifica .outer-wrapper > .container .mosaic-grid-row{
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa .outer-wrapper > .container .mosaic-grid-row
+{
+    background:transparent;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-agencia-de-divulgacao-cientifica .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-videos .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-grupos-de-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-gestao-de-cidades .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-servicos-do-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-unesco .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-parfor .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibid .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibic .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibiti .outer-wrapper > .container .mosaic-grid-row,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-funttel .outer-wrapper > .container .mosaic-grid-row{
     background:#fff;
 }
     
@@ -3027,6 +3234,11 @@ body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h
     font-weight: 400;
     line-height: 1.2;
     min-height: 120px;
+}
+body.section-enade .container-fluid.nopadding .contagem {
+    padding-top: 92px;
+    font-size: 95px;
+ 
 }
 
 }
