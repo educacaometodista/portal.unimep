@@ -219,6 +219,10 @@ h6.atendimento-modal {
     transition: 0.4s;
 }
 
+a.plone-btn.plone-btn-block {
+    display: table;
+}
+
 .mosaic-grid-row.avisos {
     background: #fff6d0;
     text-align: center;
@@ -392,6 +396,57 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
     background:transparent;
 }
 
+/* HOME INSCRIÇÕES */
+
+body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas2 > div:first-of-type{
+    overflow: hidden;
+}
+
+div.inscricoes-abertas2 .mosaic-grid-cell.mosaic-width-third.mosaic-position-leftmost {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    color:#FFFFFF;
+    border-radius: 20px 0px;
+    box-shadow: 3px 2px 20px 0px #00000014;
+    background: rgba(242,156,51,1);
+    background: -moz-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,156,51,1)), color-stop(100%, rgba(189,108,15,1)));
+    background: -webkit-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
+    background: -o-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
+    background: -ms-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
+    background: linear-gradient(to right, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f29c33', endColorstr='#bd6c0f', GradientType=1 );
+}
+
+div.inscricoes-abertas2 ins.fas {
+    text-decoration: none;
+}
+
+div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(2) {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+div.inscricoes-abertas2 ins.fas:before {
+    font-size: 15em;
+    position: absolute;
+    bottom: 0px;
+    right: -75px;
+    color: #f1f1f157;
+}
+
+/* div.inscricoes-abertas2 p:last-of-type {
+    background: #ffffff94;
+    text-align: center;
+    border-radius: 10px 0px;
+    height: 30px;
+    padding: 5px 0px 0px 0px;
+    width: 65%;
+}
+
+div.inscricoes-abertas2 p a:last-of-type {
+    color: #7e531e !important;
+} */
 
 /* PORTLET */
 
