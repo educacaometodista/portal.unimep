@@ -3,8 +3,9 @@
 *
 * GitHub: https://github.com/educacaometodista/Portal-UNIMEP-Plone-5
 *
-* Autor: Fernando Henrique Zancopé
-* Assistente: Léu Almeida
+* Autores:
+* Fernando Henrique Zancopé (https://github.com/fernandozancope)
+* Léu Almeida (https://leunardo.dev)
 *
 *
 * CORES DO TEMA UNIMEP
@@ -398,11 +399,15 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
 
 /* HOME INSCRIÇÕES */
 
-body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas2 > div:first-of-type{
+body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas2 > div {
     overflow: hidden;
 }
 
-div.inscricoes-abertas2 .mosaic-grid-cell.mosaic-width-third.mosaic-position-leftmost {
+.mosaic-grid-row.inscricoes-abertas2 {
+    margin-bottom: 30px;
+}
+
+div.inscricoes-abertas2 .mosaic-grid-cell {
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     color:#FFFFFF;
@@ -418,35 +423,65 @@ div.inscricoes-abertas2 .mosaic-grid-cell.mosaic-width-third.mosaic-position-lef
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f29c33', endColorstr='#bd6c0f', GradientType=1 );
 }
 
+div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:nth-child(1),
+div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:nth-child(2) {
+    width: 30.33% !important;
+    margin-right: 3% !important;
+    min-height: 220px;
+}
+
+div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:nth-child(3) {
+    width: 33% !important;
+    min-height: 220px;
+}
+
 div.inscricoes-abertas2 ins.fas {
     text-decoration: none;
 }
 
 div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(2) {
-    font-size: 23px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+div.inscricoes-abertas2 div.mosaic-tile-content p:nth-child(3) {
+    font-size: 15px;
     color: #ffffff;
 }
 
 div.inscricoes-abertas2 ins.fas:before {
-    font-size: 15em;
+    font-size: 10em;
     position: absolute;
-    bottom: 0px;
-    right: -75px;
-    color: #f1f1f157;
+    bottom: 60px;
+    right: -45px;
+    color: #ffffff36;
 }
 
-/* div.inscricoes-abertas2 p:last-of-type {
-    background: #ffffff94;
+div.inscricoes-abertas2 p:last-of-type {
+    background: #252525;
     text-align: center;
     border-radius: 10px 0px;
     height: 30px;
     padding: 5px 0px 0px 0px;
     width: 65%;
+    margin-top: 20px;
+    /* position: absolute;
+    bottom: 0px; */
 }
 
+div.inscricoes-abertas2 p:last-of-type:hover {
+    background: #252525c2;
+    transition: 0.4s;
+}
+
+
 div.inscricoes-abertas2 p a:last-of-type {
-    color: #7e531e !important;
-} */
+    color: #fff !important;
+}
+
+div.inscricoes-abertas2 p a:last-of-type:hover {
+    text-decoration: none;
+}
 
 /* PORTLET */
 
