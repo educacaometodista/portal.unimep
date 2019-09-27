@@ -12,9 +12,9 @@
 
 * Laranja (Títulos e Links): #F29C33
 
-* Azul Fundo: #425e85
-* Azul Logo: #014A94
-* Amarelo Logo: #FFD50F
+* Laranja Fundo: #
+* Laranja Logo: #
+* Cinza Logo: #
 
 */ 
 
@@ -411,7 +411,7 @@ div.inscricoes-abertas2 .mosaic-grid-cell {
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     color:#FFFFFF;
-    border-radius: 20px 0px;
+    border-radius: 20px;
     box-shadow: 3px 2px 20px 0px #00000014;
     background: rgba(242,156,51,1);
     background: -moz-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
@@ -684,6 +684,17 @@ body.section-financeiro h4{
 }
 body.section-graduacao-presencial .mosaic-tile-content iframe{
     padding-bottom:10px;
+}
+/* Home Page */
+
+body.section-home .outer-wrapper > .container .destaqueshome.mosaic-grid-row-fluid {
+background:#FFF url("/Metodista/lato-sensu/imagens/fund-lato-metodista.jpg") !important;
+height: 100% !important; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed !important;
+background-position: center !important;
+background-repeat: no-repeat !important;
+background-size: cover !important;
 }
 
 /*Graduação Presencial/Notícias */
