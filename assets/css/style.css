@@ -2491,6 +2491,18 @@ body.section-noticias article#content #content-core{
     color: #a09971;
 }*/
 
+div.reportarErrosDiv {
+    font-size: 15px;
+}
+
+div.reportarErrosDiv p {
+    text-align: right;
+}
+
+body.section-home div.reportarErrosDiv {
+    display: none;
+}
+
 /* EVENTOS */
 .eventos-home h2{
     color:#F29C33;
@@ -3259,6 +3271,42 @@ a.col-md-2.boxes-lato{
 }
 a.boxes-lato:first-child{
     margin-left:0;
+}
+
+/*FORMULÁRIOS*/
+div.pfg-form.formid-reportar-erro form#fg-base-edit {
+    border-top: solid 4px #f2ca10;
+    margin-top: 30px;
+}
+div#archetypes-fieldname-nome label.formQuestion,
+div#archetypes-fieldname-email label.formQuestion,
+div#archetypes-fieldname-comentarios label.formQuestion {
+    margin-top: 30px;
+}
+fieldset#pfg-fieldsetname-formulario-campos{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+fieldset#pfg-fieldsetname-formulario-padrao .field,
+fieldset#pfg-fieldsetname-formulario-campos .field,
+.pfg-form.formid-fale-conosco form textarea#comentarios,
+.pfg-form.formid-fale-conosco form textarea#comments,
+.pfg-form.formid-reportar-erro form textarea#comentarios,
+.pfg-form.formid-reportar-erro form textarea#comments{
+    width: 49%;
+    float: left;
+}
+.pfg-form.formid-fale-conosco form textarea#comentarios,
+.pfg-form.formid-fale-conosco form textarea#comments,
+.pfg-form.formid-reportar-erro form textarea#comentarios,
+.pfg-form.formid-reportar-erro form textarea#comments{
+    min-height: 109px;
+}
+
+fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
+fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
+    margin-left: 2%;
 }
 
 body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
