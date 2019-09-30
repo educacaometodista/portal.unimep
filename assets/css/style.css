@@ -3238,7 +3238,8 @@ a.col-md-5ths.boxes-lato{
     min-height: 100px;
 }
 
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid {
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.mosaic-grid-row-fluid{
     width: 100%;
 }
 
