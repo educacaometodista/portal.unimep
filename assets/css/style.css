@@ -415,7 +415,10 @@ body:not(.userrole-authenticated).no-portlet-columns.section-graduacao-presencia
 
 /* HOME INSCRIÇÕES */
 
-body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas2 > div {
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content,
+body:not(.userrole-authenticated) div.mosaic-grid-row.inscricoes-abertas2 div{
     overflow: hidden;
 }
 
@@ -423,13 +426,15 @@ body:not(.userrole-authenticated) .mosaic-grid-row.inscricoes-abertas2 > div {
     margin-bottom: 30px;
 }
 
-div.inscricoes-abertas2 .mosaic-grid-cell {
+div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content
+/*div.inscricoes-abertas2 .mosaic-grid-cell*/ {
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     color:#FFFFFF;
     border-radius: 20px;
     box-shadow: 3px 2px 20px 0px #00000014;
     background: rgba(242,156,51,1);
+	min-height: 220px;
     background: -moz-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,156,51,1)), color-stop(100%, rgba(189,108,15,1)));
     background: -webkit-linear-gradient(left, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
@@ -438,7 +443,7 @@ div.inscricoes-abertas2 .mosaic-grid-cell {
     background: linear-gradient(to right, rgba(242,156,51,1) 0%, rgba(189,108,15,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f29c33', endColorstr='#bd6c0f', GradientType=1 );
 }
-
+/*
 div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:nth-child(1),
 div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:nth-child(2) {
     width: 30.33% !important;
@@ -450,7 +455,7 @@ div.mosaic-grid-row.inscricoes-abertas2 div.mosaic-grid-cell.mosaic-width-third:
     width: 33% !important;
     min-height: 220px;
 }
-
+*/
 div.inscricoes-abertas2 ins.fas {
     text-decoration: none;
 }
@@ -473,19 +478,19 @@ div.inscricoes-abertas2 ins.fas:before {
     color: #ffffff36;
 }
 
-div.inscricoes-abertas2 p:last-of-type {
+div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type {
+	display: block;
     background: #252525;
     text-align: center;
     border-radius: 10px 0px;
-    height: 30px;
-    padding: 5px 0px 0px 0px;
+    padding: 6px 0px 3px 0px;
     width: 65%;
-    margin-top: 20px;
-    /* position: absolute;
-    bottom: 0px; */
+    margin-top: 15px;
+    position: absolute;
+    bottom: 40px;
 }
 
-div.inscricoes-abertas2 p:last-of-type:hover {
+div.inscricoes-abertas2 .mosaic-tile-content a:last-of-type:hover {
     background: #252525c2;
     transition: 0.4s;
 }
@@ -3385,34 +3390,11 @@ body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h
     line-height: 1.2;
     min-height: 80px;
 }
-body.section-enade .container-fluid.nopadding .contagem {
-    padding-top: 100px;
-    font-size: 85px;
-}
-.mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix{
-    width: 15.4%;
-    display: inline-block;
-    font-weight: 100;
-    margin-right: 1.5%;
-    float: left;
-}
-
-.mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary{
-    height: 150px;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-.mosaic-grid-row.curoslato.mosaic-grid-row-fluid div:nth-child(6n+7) > .tileItem.visualIEFloatFix{
-    margin-right:0;
-}
 
 }
 
 @media only screen and (min-width: 1200px) {
 
-/*body.template-layout.no-portlet-columns .outer-wrapper > .container {
-    width: 1170px;
-}*/
     
 .col-lg-5ths {
         width: 20%;
@@ -3421,8 +3403,6 @@ body.section-enade .container-fluid.nopadding .contagem {
     a.col-md-5ths.boxes-lato{
     min-height: 75px;
 }
-
-
 
 .mosaic-grid-row.curoslato.mosaic-grid-row-fluid .tileItem.visualIEFloatFix h2.tileHeadline a.summary{
     height: 110px;
@@ -3436,13 +3416,6 @@ body.section-enade .container-fluid.nopadding .contagem {
 body.section-home .tileItem.visualIEFloatFix a.summary-image {
     height: 180px;
 }
-/*body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row
-{
-    max-width: 1140px;
-    background:#fff;
-    padding:5px 15px;
-    border-radius:4px;
-}*/
 
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-graduacao-presencial .outer-wrapper > .container .mosaic-grid-row,
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-lato-sensu .outer-wrapper > .container .mosaic-grid-row,
@@ -3457,16 +3430,6 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos
     background:transparent;
 }
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-agencia-de-divulgacao-cientifica .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-videos .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-grupos-de-pesquisa .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-gestao-de-cidades .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-servicos-do-escritorio-de-apoio-a-pesquisa .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-insercoes-catedra-unesco .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-parfor .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibid .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibic .outer-wrapper > .container .mosaic-grid-row,
-body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-pibiti .outer-wrapper > .container .mosaic-grid-row,
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-pos-graduacao-e-pesquisa.subsection-programas-funttel .outer-wrapper > .container .mosaic-grid-row{
     background:#fff;
 }
@@ -3482,11 +3445,6 @@ body.section-faculdade-de-teologia .destaques-fateo .tileItem.visualIEFloatFix h
     font-weight: 400;
     line-height: 1.2;
     min-height: 120px;
-}
-body.section-enade .container-fluid.nopadding .contagem {
-    padding-top: 92px;
-    font-size: 95px;
- 
 }
 
 }
@@ -3508,10 +3466,6 @@ body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapp
 body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid,
 body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid{
     width:auto;
-}
-body.section-enade .container-fluid.nopadding .contagem {
-    padding-top: 80px;
-    font-size: 110px;
 }
     
     .container-fluid.nopadding .banner-fluido-novo{
