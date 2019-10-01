@@ -28,6 +28,7 @@ p.facebookModal{
     text-align: center;
 }
 
+
 #ouibounce-modal form input[type=submit]:hover,
 button.envia-form:hover{
     background: #344a5f;
@@ -703,13 +704,55 @@ body.section-graduacao-presencial .mosaic-tile-content iframe{
 /* Home Page */
 
 body.section-home .outer-wrapper > .container .destaqueshome.mosaic-grid-row-fluid {
-background:#FFF url("/Metodista/lato-sensu/imagens/fund-lato-metodista.jpg") !important;
+background:url("/UNIMEP/imagens/background-parallax-unimep.png") !important;
 height: 100% !important; 
+	margin-top: 50px;
+	padding-top: 120px;
+	padding-bottom: 50px;
 /* Create the parallax scrolling effect */
 background-attachment: fixed !important;
 background-position: center !important;
 background-repeat: no-repeat !important;
 background-size: cover !important;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid{
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	margin-top: 50px;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home{
+	background: transparent;
+    color: #000;
+    font-weight: 500;
+    width: 98%;
+	font-size: 46px;
+    padding-top: 20px !important;
+    display: table;
+    white-space: nowrap;
+}
+
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home:before{
+border-top: 2px solid;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.7em;
+    width: 47%;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home:before{
+	right: 1%;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home:after{
+	border-top: 2px solid;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.7em;
+    width: 47%;
+}
+body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home:after{
+	left: 1%;
 }
 
 /*Graduação Presencial/Notícias */
@@ -2149,7 +2192,14 @@ body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.rem
     margin: 10px 0;
     min-height: 224px;
 }
-
+.mosaic-grid-row.destaqueshome.mosaic-grid-row-fluid .box-home{
+background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    min-height: 224px;
+    color: #FFF;
+}
 /*body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h1:first-of-type,
 body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h2:first-of-type,
 body.section-stricto-sensu .destaque-home-stricto .mosaic-grid-cell .movable.removable.mosaic-tile .mosaic-tile-content h3:first-of-type,
@@ -3303,7 +3353,7 @@ a.col-md-5ths.boxes-lato{
 
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-tachadoead.mosaic-grid-row-fluid,
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.mosaic-grid-row-fluid{
-    width: 100%;
+    /*width: 100%;*/
 }
 
 a.col-md-2.boxes-lato{
@@ -3455,8 +3505,9 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrap
 body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row {
     width: 1540px;
 }
+body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid,
 body:not(.userrole-authenticated).mosaic-enabled.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row-fluid{
-    width:100%;
+    width:auto;
 }
 body.section-enade .container-fluid.nopadding .contagem {
     padding-top: 80px;
