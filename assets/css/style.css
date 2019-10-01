@@ -27,9 +27,7 @@ p.facebookModal{
     padding: 10px 0;
     text-align: center;
 }
-p.facebookModal a:hover{
-    color: #344a5f !important;
-}
+
 #ouibounce-modal form input[type=submit]:hover,
 button.envia-form:hover{
     background: #344a5f;
@@ -53,14 +51,13 @@ button.envia-form:hover{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   cursor: pointer;
 }
 #ouibounce-modal .modal {
   width: 600px;
   height: 400px;
   background-color: #f0f1f2;
-  z-index: 1;
   position: absolute;
   z-index:9999;
   display:block;
@@ -73,7 +70,7 @@ button.envia-form:hover{
 }
 #ouibounce-modal .modal-title {
   font-size: 18px;
-  background-color: #357dbe;
+  background-color: #F29C33;
   color: #fff;
   padding: 10px;
   margin: 0;
@@ -96,6 +93,14 @@ button.envia-form:hover{
   line-height: 1.3em;
   text-align: center;
 }
+#ouibounce-modal p i.fab{
+	color:#F29C33;
+}
+#ouibounce-modal p a:hover{
+	color:#cc842d;
+	text-decoration: none;
+}
+
 #ouibounce-modal form {
   text-align: center;
   margin-top: 35px;
@@ -122,10 +127,14 @@ button.envia-form{
     font-size: 14px;
     border-radius: 4px;
     color: #fff;
-    background-color: #357dbe;
+    background-color: #F29C33;
     border: none;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;
+}
+#ouibounce-modal form input[type=submit]:hover,
+button.envia-form:hover{
+	background: #cc842d;
 }
 
 #ouibounce-modal form p {
@@ -486,12 +495,12 @@ div.inscricoes-abertas2 p a:last-of-type:hover {
 /* PORTLET */
 
 .portlet .portletHeader {
-    background: rgb(233, 106, 1);
-    background: linear-gradient(90deg, rgb(233, 105, 1) 0%, rgb(253, 172, 0) 50%, rgb(236, 113, 0) 100%);
+    background: rgb(55,118,176);
+    background: linear-gradient(90deg, rgba(55,118,176,1) 0%, rgba(109,162,212,1) 50%, rgba(55,118,176,1) 100%);
     font-weight: 400;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    color: #fff;
+    color:#fff;
 }
 
 .portlet .portletContent > ul > li a {
@@ -1619,7 +1628,7 @@ a.transparent-btns_nav.transparent-btns1_nav.prev:hover {
 
 h1,h2,h3,h4,h5,h6,h7{
     font-family: 'Oswald', sans-serif;
-    color:#e0800b;
+    color:#F29C33;
 }
 h2 {
     font-size: 36px;
@@ -2491,18 +2500,6 @@ body.section-noticias article#content #content-core{
     color: #a09971;
 }*/
 
-div.reportarErrosDiv {
-    font-size: 15px;
-}
-
-div.reportarErrosDiv p {
-    text-align: right;
-}
-
-body.section-home div.reportarErrosDiv {
-    display: none;
-}
-
 /* EVENTOS */
 .eventos-home h2{
     color:#F29C33;
@@ -3271,42 +3268,6 @@ a.col-md-2.boxes-lato{
 }
 a.boxes-lato:first-child{
     margin-left:0;
-}
-
-/*FORMULÁRIOS*/
-div.pfg-form.formid-reportar-erro form#fg-base-edit {
-    border-top: solid 4px #f2ca10;
-    margin-top: 30px;
-}
-div#archetypes-fieldname-nome label.formQuestion,
-div#archetypes-fieldname-email label.formQuestion,
-div#archetypes-fieldname-comentarios label.formQuestion {
-    margin-top: 30px;
-}
-fieldset#pfg-fieldsetname-formulario-campos{
-    width: 49%;
-    float: left;
-    margin-right: 2%;
-}
-fieldset#pfg-fieldsetname-formulario-padrao .field,
-fieldset#pfg-fieldsetname-formulario-campos .field,
-.pfg-form.formid-fale-conosco form textarea#comentarios,
-.pfg-form.formid-fale-conosco form textarea#comments,
-.pfg-form.formid-reportar-erro form textarea#comentarios,
-.pfg-form.formid-reportar-erro form textarea#comments{
-    width: 49%;
-    float: left;
-}
-.pfg-form.formid-fale-conosco form textarea#comentarios,
-.pfg-form.formid-fale-conosco form textarea#comments,
-.pfg-form.formid-reportar-erro form textarea#comentarios,
-.pfg-form.formid-reportar-erro form textarea#comments{
-    min-height: 109px;
-}
-
-fieldset#pfg-fieldsetname-formulario-padrao .field:nth-child(odd),
-fieldset#pfg-fieldsetname-formulario-campos .field:nth-child(odd){
-    margin-left: 2%;
 }
 
 body.section-lato-sensu .tileItem.visualIEFloatFix h2.tileHeadline,
