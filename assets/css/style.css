@@ -719,6 +719,7 @@ background-attachment: fixed !important;
 background-position: center !important;
 background-repeat: no-repeat !important;
 background-size: cover !important;
+box-shadow: 0px 6px 20px 0px #0000008c;
 }
 body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid{
 	position: absolute;
@@ -728,7 +729,7 @@ body:not(.userrole-authenticated).template-layout.no-portlet-columns .outer-wrap
 }
 body:not(.userrole-authenticated).template-layout.no-portlet-columns.section-home .outer-wrapper > .container .mosaic-grid-row.titulo-destaqueshome.mosaic-grid-row-fluid h2.destaques-home{
 	background: transparent;
-    color: #000;
+    color: #000000d4;
     font-weight: 500;
     width: 98%;
 	font-size: 46px;
@@ -2826,7 +2827,7 @@ body.fixedmenu #mainnavigation-wrapper{
 
 .barra-institucional ul.barra-right li:hover,
 .barra-institucional ul.barra-left li:hover{
-    background:rgba(0,0,0,0.15);
+    background:#ffffff2b;
     transition: 0.3s;
 }
 
@@ -2866,7 +2867,7 @@ body.fixedmenu #mainnavigation-wrapper{
 .barra-institucional ul.barra-right li.topo-siga:hover,
 .barra-institucional ul.barra-right li.topo-moodle:hover,
 .barra-institucional ul.barra-right li.topo-portal-do-aluno:hover{
-    background:rgba(0,0,0,0.35);
+    background:rgba(255, 255, 255, 0.35);
     text-decoration: none;
     transition: 0.3s;
 }
